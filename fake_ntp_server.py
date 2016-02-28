@@ -38,7 +38,6 @@ def fake_server(address):
             pass
         time_since_start = time.time() - drift_start
         return_time = drift_start + time_since_start * speed
-        #return_time = time.time()
 
         response = NTPPacket()
         response.version = packet.version
